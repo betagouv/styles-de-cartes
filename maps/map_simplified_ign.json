@@ -2,6 +2,9 @@
   "version": 8,
   "name": "Style épuré - IGN",
   "metadata": {"maputnik:renderer": "mlgljs"},
+  "center": [2.5, 47],
+  "zoom": 5,
+  "light": {"anchor": "viewport"},
   "sources": {
     "Plan IGN": {
       "type": "vector",
@@ -191,66 +194,6 @@
       }
     },
     {
-      "id": "ferre_sou-dash",
-      "type": "line",
-      "source": "Plan IGN",
-      "source-layer": "ferre_sou",
-      "minzoom": 10,
-      "paint": {
-        "line-color": "rgba(170, 170, 170, 1)",
-        "line-width": [
-          "interpolate",
-          ["exponential", 1.4],
-          ["zoom"],
-          8,
-          4,
-          20,
-          32
-        ],
-        "line-dasharray": [0.2, 4]
-      }
-    },
-    {
-      "id": "ferre_sou",
-      "type": "line",
-      "source": "Plan IGN",
-      "source-layer": "ferre_sou",
-      "minzoom": 10,
-      "paint": {
-        "line-width": [
-          "interpolate",
-          ["exponential", 1.4],
-          ["zoom"],
-          8,
-          2,
-          20,
-          28
-        ],
-        "line-color": "rgba(209, 208, 208, 1)",
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "ferre_sou-inner",
-      "type": "line",
-      "source": "Plan IGN",
-      "source-layer": "ferre_sou",
-      "minzoom": 10,
-      "paint": {
-        "line-width": [
-          "interpolate",
-          ["exponential", 1.4],
-          ["zoom"],
-          8,
-          1,
-          20,
-          26
-        ],
-        "line-color": "rgba(229, 229, 229, 1)",
-        "line-opacity": 1
-      }
-    },
-    {
       "id": "bati_surf_vegetation",
       "type": "fill",
       "source": "Plan IGN",
@@ -259,11 +202,15 @@
       "maxzoom": 24,
       "filter": [
         "any",
-        ["==", "symbo", "CIMETIERE_SURF"],
-        ["==", "symbo", "FOOT_SURF"],
-        ["==", "symbo", "SPORT_INDIF_SURF"],
-        ["==", "symbo", "CIMETIERE_MILI_SURF"],
-        ["==", "symbo", "PISTE_HERBE"]
+        [
+          "in",
+          "symbo",
+          "CIMETIERE_SURF",
+          "FOOT_SURF",
+          "SPORT_INDIF_SURF",
+          "CIMETIERE_MILI_SURF",
+          "PISTE_HERBE"
+        ]
       ],
       "layout": {"visibility": "visible"},
       "paint": {"fill-opacity": 1, "fill-color": "rgba(215, 233, 214, 1)"}
@@ -278,6 +225,16 @@
         "fill-color": "rgba(215, 233, 214, 1)",
         "fill-opacity": ["interpolate", ["linear"], ["zoom"], 7, 0, 8, 1]
       }
+    },
+    {
+      "id": "routier_surf",
+      "type": "fill",
+      "source": "Plan IGN",
+      "source-layer": "routier_surf",
+      "minzoom": 13,
+      "filter": ["all", ["!=", "symbo", "DALLE_DE_PROTECTION"]],
+      "layout": {"visibility": "visible"},
+      "paint": {"fill-color": "rgba(230, 230, 230, 1)"}
     },
     {
       "id": "hydro_surf",
@@ -322,18 +279,23 @@
       "minzoom": 14,
       "maxzoom": 24,
       "filter": [
-        "none",
-        ["==", "symbo", "CIMETIERE_SURF"],
-        ["==", "symbo", "POSTE_ELEC_SURF"],
-        ["==", "symbo", "FOOT_SURF"],
-        ["==", "symbo", "SPORT_INDIF_SURF"],
-        ["==", "symbo", "ECLUSE_SURF"],
-        ["==", "symbo", "CIMETIERE_MILI_SURF"],
-        ["==", "symbo", "PISTE_DUR"],
-        ["==", "symbo", "TENNIS_SURF"],
-        ["==", "symbo", "PISTE_SPORT_SURF"],
-        ["==", "symbo", "PISTE_HERBE"],
-        ["==", "symbo", "RESERVOIR_EAU_SURF"]
+        "all",
+        [
+          "!in",
+          "symbo",
+          "CIMETIERE_SURF",
+          "POSTE_ELEC_SURF",
+          "POSTE_ELEC_SURF",
+          "SPORT_INDIF_SURF",
+          "ECLUSE_SURF",
+          "CIMETIERE_MILI_SURF",
+          "PISTE_DUR",
+          "TENNIS_SURF",
+          "PISTE_SPORT_SURF",
+          "PISTE_SPORT_SURF",
+          "PISTE_HERBE",
+          "RESERVOIR_EAU_SURF"
+        ]
       ],
       "layout": {"visibility": "visible"},
       "paint": {
@@ -343,11 +305,128 @@
       }
     },
     {
+      "id": "routier_route_principale",
+      "type": "line",
+      "source": "Plan IGN",
+      "source-layer": "routier_route",
+      "minzoom": 4,
+      "filter": [
+        "any",
+        [
+          "in",
+          "symbo",
+          "AUTOROU_LIBRE",
+          "AUTOROU_PEAGE",
+          "AUTOROU_CONSTR",
+          "BRET_AUTO_LIBRE_1",
+          "BRET_AUTO_LIBRE_2",
+          "BRET_AUTO_LIBRE_3",
+          "BRET_AUTO_PEAGE_1",
+          "BRET_AUTO_PEAGE_2",
+          "BRET_AUTO_PEAGE_3",
+          "PRINCIPALE_4",
+          "PRINCIPALE_3",
+          "PRINCIPALE_2",
+          "PRINCIPALE_1",
+          "BRET_PRINCIPALE",
+          "PRINCIPALE_CONSTR"
+        ]
+      ],
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "butt",
+        "line-join": "miter"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "rgba(186, 186, 186, 1)",
+        "line-width": [
+          "interpolate",
+          ["exponential", 1.9],
+          ["zoom"],
+          4,
+          1.6,
+          19,
+          100
+        ]
+      }
+    },
+    {
+      "id": "routier_route_principal_filet_interieur",
+      "type": "line",
+      "source": "Plan IGN",
+      "source-layer": "routier_route",
+      "minzoom": 4,
+      "filter": [
+        "any",
+        [
+          "in",
+          "symbo",
+          "AUTOROU_LIBRE",
+          "AUTOROU_PEAGE",
+          "AUTOROU_CONSTR",
+          "BRET_AUTO_LIBRE_1",
+          "BRET_AUTO_LIBRE_2",
+          "BRET_AUTO_LIBRE_3",
+          "BRET_AUTO_PEAGE_1",
+          "BRET_AUTO_PEAGE_2",
+          "BRET_AUTO_PEAGE_3",
+          "PRINCIPALE_4",
+          "PRINCIPALE_3",
+          "PRINCIPALE_2",
+          "PRINCIPALE_1",
+          "BRET_PRINCIPALE",
+          "PRINCIPALE_CONSTR"
+        ]
+      ],
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "butt",
+        "line-join": "miter"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "rgba(255, 255, 255, 1)",
+        "line-width": [
+          "interpolate",
+          ["exponential", 1.9],
+          ["zoom"],
+          4,
+          1,
+          19,
+          90
+        ]
+      }
+    },
+    {
+      "id": "routier_route",
+      "type": "line",
+      "source": "Plan IGN",
+      "source-layer": "routier_route",
+      "minzoom": 8,
+      "filter": ["any", ["in", "symbo", "REGIONALE_1"]],
+      "layout": {"visibility": "none"},
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "rgba(186, 186, 186, 1)",
+        "line-width": [
+          "interpolate",
+          ["exponential", 1.9],
+          ["zoom"],
+          4,
+          1.6,
+          21,
+          260
+        ]
+      }
+    },
+    {
       "id": "ferre-dash",
       "type": "line",
       "source": "Plan IGN",
       "source-layer": "ferre",
       "minzoom": 10,
+      "layout": {"visibility": "visible"},
       "paint": {
         "line-color": "rgba(170, 170, 170, 1)",
         "line-width": [
@@ -368,6 +447,7 @@
       "source": "Plan IGN",
       "source-layer": "ferre",
       "minzoom": 10,
+      "layout": {"visibility": "visible"},
       "paint": {
         "line-color": "rgba(209, 208, 208, 1)",
         "line-width": [
@@ -387,6 +467,7 @@
       "source": "Plan IGN",
       "source-layer": "ferre_sup",
       "minzoom": 10,
+      "layout": {"visibility": "visible"},
       "paint": {
         "line-color": "rgba(170, 170, 170, 1)",
         "line-width": [
@@ -407,6 +488,7 @@
       "source": "Plan IGN",
       "source-layer": "ferre_sup",
       "minzoom": 10,
+      "layout": {"visibility": "visible"},
       "paint": {
         "line-color": "rgba(209, 208, 208, 1)",
         "line-width": [
@@ -417,6 +499,100 @@
           2,
           20,
           28
+        ]
+      }
+    },
+    {
+      "id": "routier_route_sup_principale",
+      "type": "line",
+      "source": "Plan IGN",
+      "source-layer": "routier_route_sup",
+      "minzoom": 4,
+      "filter": [
+        "any",
+        [
+          "in",
+          "symbo",
+          "AUTOROU_LIBRE_SUP",
+          "AUTOROU_PEAGE_SUP",
+          "AUTOROU_CONSTR_SUP",
+          "BRET_AUTO_LIBRE_1_SUP",
+          "BRET_AUTO_LIBRE_2_SUP",
+          "BRET_AUTO_LIBRE_3_SUP",
+          "BRET_AUTO_PEAGE_1_SUP",
+          "BRET_AUTO_PEAGE_2_SUP",
+          "BRET_AUTO_PEAGE_3_SUP",
+          "PRINCIPALE_4_SUP",
+          "PRINCIPALE_3_SUP",
+          "PRINCIPALE_2_SUP",
+          "PRINCIPALE_1_SUP",
+          "BRET_PRINCIPALE_SUP",
+          "PRINCIPALE_CONSTR_SUP"
+        ]
+      ],
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "butt",
+        "line-join": "miter"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "rgba(186, 186, 186, 1)",
+        "line-width": [
+          "interpolate",
+          ["exponential", 1.9],
+          ["zoom"],
+          4,
+          1.6,
+          19,
+          100
+        ]
+      }
+    },
+    {
+      "id": "routier_route_sup_principal_filet_interieur-copy",
+      "type": "line",
+      "source": "Plan IGN",
+      "source-layer": "routier_route_sup",
+      "minzoom": 4,
+      "filter": [
+        "any",
+        [
+          "in",
+          "symbo",
+          "AUTOROU_LIBRE_SUP",
+          "AUTOROU_PEAGE_SUP",
+          "AUTOROU_CONSTR_SUP",
+          "BRET_AUTO_LIBRE_1_SUP",
+          "BRET_AUTO_LIBRE_2_SUP",
+          "BRET_AUTO_LIBRE_3_SUP",
+          "BRET_AUTO_PEAGE_1_SUP",
+          "BRET_AUTO_PEAGE_2_SUP",
+          "BRET_AUTO_PEAGE_3_SUP",
+          "PRINCIPALE_4_SUP",
+          "PRINCIPALE_3_SUP",
+          "PRINCIPALE_2_SUP",
+          "PRINCIPALE_1_SUP",
+          "BRET_PRINCIPALE_SUP",
+          "PRINCIPALE_CONSTR_SUP"
+        ]
+      ],
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "butt",
+        "line-join": "miter"
+      },
+      "paint": {
+        "line-opacity": 1,
+        "line-color": "rgba(255, 255, 255, 1)",
+        "line-width": [
+          "interpolate",
+          ["exponential", 1.9],
+          ["zoom"],
+          4,
+          1,
+          19,
+          90
         ]
       }
     },
