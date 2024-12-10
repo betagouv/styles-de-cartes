@@ -1,7 +1,19 @@
 {
   "version": 8,
-  "name": "Plan IGN épuré",
-  "metadata": {"maputnik:renderer": "mlgljs"},
+  "name": "Carte épurée - IGN",
+  "metadata": {
+    "name": "Carte épurée - IGN",
+    "description": "Un style sobre et discret de contextualisation géographique, adapté pour mettre en avant vos données.",
+    "usage": "Recommandé pour les applications cartographiques générales.",
+    "version": "0.9.0",
+    "author": "Fonds de cartes - IGN",
+    "contact": "fonds-de-cartes@beta.gouv.fr",
+    "license": "License Etalab 2.0",
+    "attribution": "© IGN",
+    "minzoom": 0,
+    "maxzoom": 24,
+    "maputnik:renderer": "mlgljs"
+  },
   "center": [2.5, 47],
   "zoom": 5,
   "sources": {
@@ -5487,34 +5499,6 @@
         "text-font": ["Source Sans Pro"]
       },
       "paint": {"text-color": "#532A2A"}
-    },
-    {
-      "id": "toponyme bati ponc aerogare",
-      "type": "symbol",
-      "source": "plan_ign",
-      "source-layer": "toponyme_bati_ponc",
-      "minzoom": 14,
-      "maxzoom": 17,
-      "filter": [
-        "all",
-        ["==", "txt_typo", "TYPO_E_GE"],
-        ["==", "symbo", "AEROGARE"]
-      ],
-      "layout": {
-        "visibility": "visible",
-        "symbol-placement": "point",
-        "text-field": "{texte}",
-        "text-anchor": "center",
-        "text-size": {"stops": [[12, 9], [16, 11]]},
-        "text-allow-overlap": false,
-        "text-padding": 1,
-        "text-font": ["Source Sans Pro Italic"]
-      },
-      "paint": {
-        "text-color": "#120049",
-        "text-halo-color": "rgba(255, 255, 255, 0.5)",
-        "text-halo-width": 1
-      }
     },
     {
       "id": "toponyme bati ponc aeroport 12",
