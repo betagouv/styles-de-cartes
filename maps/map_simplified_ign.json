@@ -5073,25 +5073,6 @@
       }
     },
     {
-      "id": "toponyme religieux zoom 15 16",
-      "type": "symbol",
-      "source": "plan_ign",
-      "source-layer": "toponyme_bati_ponc",
-      "minzoom": 14,
-      "maxzoom": 16,
-      "filter": ["==", "txt_typo", "religieux"],
-      "layout": {
-        "visibility": "visible",
-        "symbol-placement": "point",
-        "text-field": "{designation}",
-        "text-size": 11,
-        "text-allow-overlap": false,
-        "text-padding": 1,
-        "text-font": ["Source Sans Pro Italic"]
-      },
-      "paint": {"text-color": "#000000"}
-    },
-    {
       "id": "toponyme religieux zoom 17 à 19",
       "type": "symbol",
       "source": "plan_ign",
@@ -5120,29 +5101,6 @@
         "visibility": "visible",
         "symbol-placement": "point",
         "text-field": "{texte}",
-        "text-size": 11,
-        "text-allow-overlap": false,
-        "text-padding": 1,
-        "text-font": ["Source Sans Pro Italic"]
-      },
-      "paint": {"text-color": "#000000"}
-    },
-    {
-      "id": "toponyme parc d'attractions zoom 14",
-      "type": "symbol",
-      "source": "plan_ign",
-      "source-layer": "toponyme_bati_ponc",
-      "minzoom": 13,
-      "maxzoom": 14,
-      "filter": [
-        "all",
-        ["==", "txt_typo", "divers_bati"],
-        ["==", "symbo", "PARC_ATTRACTIONS"]
-      ],
-      "layout": {
-        "visibility": "visible",
-        "symbol-placement": "point",
-        "text-field": "{designation}",
         "text-size": 11,
         "text-allow-overlap": false,
         "text-padding": 1,
@@ -5195,30 +5153,7 @@
       "paint": {"text-color": "#000000"}
     },
     {
-      "id": "toponyme bati divers zoom 15",
-      "type": "symbol",
-      "source": "plan_ign",
-      "source-layer": "toponyme_bati_ponc",
-      "minzoom": 14,
-      "maxzoom": 15,
-      "filter": [
-        "all",
-        ["==", "txt_typo", "divers_bati"],
-        ["in", "symbo", "CENTRALE_ELECTRIQUE", "HIPPODROME", "STADE"]
-      ],
-      "layout": {
-        "visibility": "visible",
-        "symbol-placement": "point",
-        "text-field": "{designation}",
-        "text-size": 11,
-        "text-allow-overlap": false,
-        "text-padding": 1,
-        "text-font": ["Source Sans Pro Italic"]
-      },
-      "paint": {"text-color": "#000000"}
-    },
-    {
-      "id": "toponyme bati divers zoom 16 à 19",
+      "id": "toponyme bati divers",
       "type": "symbol",
       "source": "plan_ign",
       "source-layer": "toponyme_bati_ponc",
@@ -5285,30 +5220,7 @@
       "paint": {"text-color": "#000000"}
     },
     {
-      "id": "toponyme chateau zoom 16",
-      "type": "symbol",
-      "source": "plan_ign",
-      "source-layer": "toponyme_bati_ponc",
-      "minzoom": 15,
-      "maxzoom": 16,
-      "filter": [
-        "all",
-        ["==", "txt_typo", "divers_bati"],
-        ["in", "symbo", "CHATEAU", "CHATEAU_FORT"]
-      ],
-      "layout": {
-        "visibility": "visible",
-        "symbol-placement": "point",
-        "text-field": "{designation}",
-        "text-size": 11,
-        "text-allow-overlap": false,
-        "text-padding": 1,
-        "text-font": ["Source Sans Pro Italic"]
-      },
-      "paint": {"text-color": "#000000"}
-    },
-    {
-      "id": "toponyme chateau zoom 17 à 19",
+      "id": "toponyme chateau",
       "type": "symbol",
       "source": "plan_ign",
       "source-layer": "toponyme_bati_ponc",
@@ -5330,30 +5242,7 @@
       "paint": {"text-color": "#000000"}
     },
     {
-      "id": "toponyme chateau ge zoom 16 a 17",
-      "type": "symbol",
-      "source": "plan_ign",
-      "source-layer": "toponyme_bati_ponc",
-      "minzoom": 15,
-      "maxzoom": 17,
-      "filter": [
-        "all",
-        ["==", "txt_typo", "divers_bati_ge"],
-        ["==", "symbo", "CHATEAU"]
-      ],
-      "layout": {
-        "visibility": "visible",
-        "symbol-placement": "point",
-        "text-field": "{designation}",
-        "text-size": 11,
-        "text-allow-overlap": false,
-        "text-padding": 1,
-        "text-font": ["Source Sans Pro Italic"]
-      },
-      "paint": {"text-color": "#000000"}
-    },
-    {
-      "id": "toponyme chateau ge zoom 18 à 19",
+      "id": "toponyme chateau ge",
       "type": "symbol",
       "source": "plan_ign",
       "source-layer": "toponyme_bati_ponc",
@@ -6112,25 +6001,6 @@
       }
     },
     {
-      "id": "toponyme bati ponc zai zoom 16",
-      "type": "symbol",
-      "source": "plan_ign",
-      "source-layer": "toponyme_bati_ponc",
-      "minzoom": 15,
-      "maxzoom": 16,
-      "filter": ["==", "txt_typo", "zai"],
-      "layout": {
-        "visibility": "visible",
-        "symbol-placement": "point",
-        "text-field": "{designation}",
-        "text-size": 11,
-        "text-allow-overlap": false,
-        "text-padding": 1,
-        "text-font": ["Source Sans Pro Italic"]
-      },
-      "paint": {"text-color": "#000000"}
-    },
-    {
       "id": "toponyme bati ponc zai zoom 17 a 19",
       "type": "symbol",
       "source": "plan_ign",
@@ -6149,26 +6019,7 @@
       "paint": {"text-color": "#000000"}
     },
     {
-      "id": "toponyme bati ponc zai_15 zoom 15",
-      "type": "symbol",
-      "source": "plan_ign",
-      "source-layer": "toponyme_bati_ponc",
-      "minzoom": 14,
-      "maxzoom": 15,
-      "filter": ["==", "txt_typo", "zai_15"],
-      "layout": {
-        "visibility": "visible",
-        "symbol-placement": "point",
-        "text-field": "{designation}",
-        "text-size": 11,
-        "text-allow-overlap": false,
-        "text-padding": 1,
-        "text-font": ["Source Sans Pro Italic"]
-      },
-      "paint": {"text-color": "#000000"}
-    },
-    {
-      "id": "toponyme bati ponc zai_15 zoom 16 a 19",
+      "id": "toponyme bati ponc zai_15",
       "type": "symbol",
       "source": "plan_ign",
       "source-layer": "toponyme_bati_ponc",
@@ -6186,30 +6037,7 @@
       "paint": {"text-color": "#000000"}
     },
     {
-      "id": "toponyme bati ponc zai zoom 16 vert",
-      "type": "symbol",
-      "source": "plan_ign",
-      "source-layer": "toponyme_bati_ponc",
-      "minzoom": 15,
-      "maxzoom": 16,
-      "filter": ["==", "txt_typo", "zai_vert"],
-      "layout": {
-        "visibility": "visible",
-        "symbol-placement": "point",
-        "text-field": "{designation}",
-        "text-size": 11,
-        "text-allow-overlap": false,
-        "text-padding": 1,
-        "text-font": ["Source Sans Pro Italic"]
-      },
-      "paint": {
-        "text-color": "#287B00",
-        "text-halo-color": "rgba(255, 255, 255, 0.5)",
-        "text-halo-width": 1
-      }
-    },
-    {
-      "id": "toponyme bati ponc zai zoom 17 a 19 vert",
+      "id": "toponyme bati ponc zai vert",
       "type": "symbol",
       "source": "plan_ign",
       "source-layer": "toponyme_bati_ponc",
@@ -6231,7 +6059,7 @@
       }
     },
     {
-      "id": "toponyme bati ponc zai zoom 17 a 19 beige",
+      "id": "toponyme bati ponc zai beige",
       "type": "symbol",
       "source": "plan_ign",
       "source-layer": "toponyme_bati_ponc",
