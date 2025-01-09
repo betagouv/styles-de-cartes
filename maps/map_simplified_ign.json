@@ -312,11 +312,7 @@
         ]
       ],
       "layout": {"visibility": "visible"},
-      "paint": {
-        "fill-color": "rgba(244, 243, 243, 1)",
-        "fill-opacity": 1,
-        "fill-outline-color": "#787878"
-      }
+      "paint": {"fill-color": "rgba(244, 243, 243, 1)", "fill-opacity": 1}
     },
     {
       "id": "bati ZAI - Parking",
@@ -1623,6 +1619,7 @@
       "type": "fill",
       "source": "plan_ign",
       "source-layer": "bati_surf",
+      "minzoom": 14,
       "filter": [
         "in",
         "symbo",
@@ -1633,14 +1630,18 @@
         "PISTE_SPORT_SURF",
         "NATATION_SURF"
       ],
-      "layout": {"visibility": "none"},
-      "paint": {"fill-color": "#F1F5E7", "fill-outline-color": "#F1F5E7"}
+      "layout": {"visibility": "visible"},
+      "paint": {
+        "fill-color": "rgba(234, 237, 222, 1)",
+        "fill-opacity": ["interpolate", ["linear"], ["zoom"], 14, 0, 15, 1]
+      }
     },
     {
       "id": "bati sportif surfacique",
       "type": "line",
       "source": "plan_ign",
       "source-layer": "bati_surf",
+      "minzoom": 14,
       "filter": [
         "in",
         "symbo",
@@ -1652,11 +1653,15 @@
         "NATATION_SURF"
       ],
       "layout": {
-        "visibility": "none",
+        "visibility": "visible",
         "line-cap": "round",
         "line-join": "round"
       },
-      "paint": {"line-color": "#BCD9AB", "line-width": 2}
+      "paint": {
+        "line-color": "rgba(204, 208, 192, 1)",
+        "line-width": 1,
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 14, 0, 15, 1]
+      }
     },
     {
       "id": "bati surfacique",
@@ -1693,7 +1698,7 @@
       "paint": {
         "fill-color": "rgba(216, 216, 216, 1)",
         "fill-outline-color": "rgba(164, 164, 164, 1)",
-        "fill-opacity": {"stops": [[14, 0], [15, 1]]},
+        "fill-opacity": ["interpolate", ["linear"], ["zoom"], 14, 0, 15, 1],
         "fill-antialias": true
       }
     },
@@ -1704,7 +1709,10 @@
       "source-layer": "bati_surf",
       "filter": ["in", "symbo", "PISTE_DUR", "PISTE_HERBE"],
       "layout": {"visibility": "none"},
-      "paint": {"fill-color": "#DBDBDB", "fill-outline-color": "#808080"}
+      "paint": {
+        "fill-color": "rgba(255, 28, 28, 1)",
+        "fill-outline-color": "rgba(237, 69, 69, 1)"
+      }
     },
     {
       "id": "construction linéaire - mur",
@@ -2856,7 +2864,7 @@
       "paint": {
         "fill-opacity": 0.8,
         "fill-color": "#FFFFFF",
-        "fill-outline-color": "#918091"
+        "fill-outline-color": "rgba(143, 143, 143, 1)"
       }
     },
     {
@@ -2866,8 +2874,12 @@
       "source-layer": "routier_surf",
       "maxzoom": 18,
       "filter": ["==", "symbo", "SURF_PEAGE"],
-      "layout": {"visibility": "visible"},
-      "paint": {"fill-color": "#F2DAAA", "fill-outline-color": "#E2A52A"}
+      "layout": {"visibility": "none"},
+      "paint": {
+        "fill-color": "rgba(255, 255, 255, 1)",
+        "fill-outline-color": "rgba(187, 187, 187, 1)",
+        "fill-opacity": 1
+      }
     },
     {
       "id": "bati transport surfacique - bati peage",
