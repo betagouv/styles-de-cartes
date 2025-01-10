@@ -5,6 +5,7 @@
     "name": "Carte épurée - IGN",
     "description": "Un style sobre et discret de contextualisation géographique, adapté pour mettre en avant vos données.",
     "usage": "Recommandé pour les applications cartographiques générales.",
+    "url": "https://betagouv.github.io/styles-de-cartes/maps/map_simplified_ign.json",
     "version": "0.9.0",
     "author": "Fonds de cartes - IGN",
     "contact": "fonds-de-cartes@beta.gouv.fr",
