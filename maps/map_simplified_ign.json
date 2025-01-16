@@ -230,7 +230,7 @@
       "source-layer": "ocs_vegetation_surf",
       "filter": ["==", "symbo", "ZONE_MARAIS"],
       "layout": {"visibility": "visible"},
-      "paint": {"fill-color": "rgba(204, 223, 201, 1)", "fill-opacity": 1}
+      "paint": {"fill-color": "rgba(221, 236, 239, 1)", "fill-opacity": 1}
     },
     {
       "id": "hydro surfacique - marais",
@@ -239,7 +239,7 @@
       "source-layer": "hydro_surf",
       "filter": ["==", "symbo", "ZONE_MARAIS"],
       "layout": {"visibility": "visible"},
-      "paint": {"fill-color": "rgba(204, 223, 201, 1)"}
+      "paint": {"fill-color": "rgba(221, 236, 239, 1)"}
     },
     {
       "id": "ocs - vegetation - marais salant",
@@ -396,7 +396,7 @@
       "source-layer": "hydro_surf",
       "filter": ["==", "symbo", "SURFACE_D_EAU_TEMP"],
       "layout": {"visibility": "visible"},
-      "paint": {"fill-color": "rgba(183, 207, 215, 1)"}
+      "paint": {"fill-color": "rgba(221, 236, 239, 1)"}
     },
     {
       "id": "réseau hydro  - cours d'eau souterrain",
