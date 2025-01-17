@@ -1,8 +1,6 @@
 {
   "version": 8,
   "name": "Standard map - IGN",
-  "id": "map_standard_ign",
-  "owner": "© IGN",
   "metadata": {
     "fr": {
       "name": "Carte standard - IGN",
@@ -267,7 +265,7 @@
       "source-layer": "ocs_vegetation_surf",
       "filter": ["==", "symbo", "ZONE_MARAIS_SALANT"],
       "layout": {"visibility": "visible"},
-      "paint": {"fill-color": "rgba(183, 207, 215, 1)"}
+      "paint": {"fill-color": "rgba(192, 229, 219, 1)"}
     },
     {
       "id": "ocs - Zone sable sec",
@@ -6921,5 +6919,7 @@
         "text-halo-blur": 1
       }
     }
-  ]
+  ],
+  "id": "map_standard_ign",
+  "owner": "© IGN"
 }
