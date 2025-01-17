@@ -34,6 +34,7 @@
       "source": "plan_ign",
       "source-layer": "fond_opaque",
       "minzoom": 0,
+      "maxzoom": 24,
       "layout": {"visibility": "visible"},
       "paint": {"fill-color": "rgba(214, 234, 209, 1)", "fill-opacity": 1}
     },
