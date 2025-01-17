@@ -36,7 +36,17 @@
       "minzoom": 0,
       "maxzoom": 24,
       "layout": {"visibility": "visible"},
-      "paint": {"fill-color": "rgba(214, 234, 209, 1)", "fill-opacity": 1}
+      "paint": {
+        "fill-color": {
+          "stops": [
+            [4, "rgba(229, 229, 217, 1)"],
+            [5, "rgba(214, 234, 209, 1)"],
+            [14, "rgba(214, 234, 209, 1)"],
+            [15, "rgba(240, 240, 237, 1)"]
+          ]
+        },
+        "fill-opacity": 1
+      }
     },
     {
       "id": "hydro surfacique - Estran",
@@ -82,8 +92,8 @@
       "filter": ["==", "symbo", "HYPSO_200"],
       "layout": {"visibility": "visible"},
       "paint": {
-        "fill-color": "rgba(202, 220, 196, 1)",
-        "fill-opacity": ["interpolate", ["linear"], ["zoom"], 5, 1, 6, 0]
+        "fill-color": "rgba(218, 218, 206, 1)",
+        "fill-opacity": ["interpolate", ["linear"], ["zoom"], 4, 1, 5, 0]
       }
     },
     {
@@ -95,8 +105,8 @@
       "filter": ["==", "symbo", "HYPSO_1000"],
       "layout": {"visibility": "visible"},
       "paint": {
-        "fill-color": "rgba(194, 205, 182, 1)",
-        "fill-opacity": ["interpolate", ["linear"], ["zoom"], 5, 1, 6, 0]
+        "fill-color": "rgba(207, 207, 194, 1)",
+        "fill-opacity": ["interpolate", ["linear"], ["zoom"], 4, 1, 5, 0]
       }
     },
     {
@@ -108,8 +118,8 @@
       "filter": ["==", "symbo", "HYPSO_3000"],
       "layout": {"visibility": "visible"},
       "paint": {
-        "fill-color": "rgba(186, 195, 172, 1)",
-        "fill-opacity": ["interpolate", ["linear"], ["zoom"], 5, 1, 6, 0]
+        "fill-color": "rgba(197, 197, 183, 1)",
+        "fill-opacity": ["interpolate", ["linear"], ["zoom"], 4, 1, 5, 0]
       }
     },
     {
@@ -121,8 +131,8 @@
       "filter": ["==", "symbo", "HYPSO_4000"],
       "layout": {"visibility": "visible"},
       "paint": {
-        "fill-color": "rgba(179, 185, 164, 1)",
-        "fill-opacity": ["interpolate", ["linear"], ["zoom"], 5, 1, 6, 0]
+        "fill-color": "rgba(187, 187, 173, 1)",
+        "fill-opacity": ["interpolate", ["linear"], ["zoom"], 4, 1, 5, 0]
       }
     },
     {
@@ -134,8 +144,8 @@
       "filter": ["==", "symbo", "HYPSO_5000"],
       "layout": {"visibility": "visible"},
       "paint": {
-        "fill-color": "rgba(172, 174, 154, 1)",
-        "fill-opacity": ["interpolate", ["linear"], ["zoom"], 5, 1, 6, 0]
+        "fill-color": "rgba(174, 174, 160, 1)",
+        "fill-opacity": ["interpolate", ["linear"], ["zoom"], 4, 1, 5, 0]
       }
     },
     {
@@ -178,7 +188,7 @@
       "source-layer": "ocs_vegetation_surf",
       "filter": ["in", "symbo", "ZONE_FORET_OUVERTE"],
       "layout": {"visibility": "visible"},
-      "paint": {"fill-color": "rgba(204, 223, 201, 1)"}
+      "paint": {"fill-color": "rgba(188, 223, 184, 1)"}
     },
     {
       "id": "ocs - vegetation - lande ligneuse",
@@ -187,7 +197,7 @@
       "source-layer": "ocs_vegetation_surf",
       "filter": ["==", "symbo", "ZONE_LANDE_LIGNEUSE"],
       "layout": {"visibility": "visible"},
-      "paint": {"fill-color": "rgba(204, 223, 201, 1)"}
+      "paint": {"fill-color": "rgba(188, 223, 184, 1)"}
     },
     {
       "id": "ocs - vegetation - vigne",
@@ -196,7 +206,7 @@
       "source-layer": "ocs_vegetation_surf",
       "filter": ["==", "symbo", "ZONE_VIGNE"],
       "layout": {"visibility": "visible"},
-      "paint": {"fill-color": "rgba(204, 223, 201, 1)"}
+      "paint": {"fill-color": "rgba(188, 223, 184, 1)"}
     },
     {
       "id": "ocs - vegetation - verger",
@@ -205,7 +215,7 @@
       "source-layer": "ocs_vegetation_surf",
       "filter": ["==", "symbo", "ZONE_VERGER"],
       "layout": {"visibility": "visible"},
-      "paint": {"fill-color": "rgba(204, 223, 201, 1)"}
+      "paint": {"fill-color": "rgba(188, 223, 184, 1)"}
     },
     {
       "id": "ocs - vegetation - canne à sucre, bananeraie",
@@ -214,7 +224,7 @@
       "source-layer": "ocs_vegetation_surf",
       "filter": ["==", "symbo", "ZONE_CANNE_BANANE"],
       "layout": {"visibility": "visible"},
-      "paint": {"fill-color": "rgba(204, 223, 201, 1)"}
+      "paint": {"fill-color": "rgba(188, 223, 184, 1)"}
     },
     {
       "id": "ocs - vegetation - mangrovre",
@@ -277,7 +287,7 @@
       "source-layer": "ocs_nature_sol_surf",
       "filter": ["==", "symbo", "GRAVIERS_GALETS_HUM"],
       "layout": {"visibility": "visible"},
-      "paint": {"fill-color": "rgba(183, 207, 215, 1)"}
+      "paint": {"fill-color": "rgba(192, 229, 219, 1)"}
     },
     {
       "id": "ocs - Zone rocher hydro",
@@ -286,7 +296,7 @@
       "source-layer": "ocs_nature_sol_surf",
       "filter": ["==", "symbo", "ZONE_ROCHER_HYDRO"],
       "layout": {"visibility": "visible"},
-      "paint": {"fill-color": "rgba(183, 207, 215, 1)"}
+      "paint": {"fill-color": "rgba(192, 229, 219, 1)"}
     },
     {
       "id": "ocs - Zone glacier",
