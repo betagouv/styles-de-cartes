@@ -1,22 +1,29 @@
 {
   "version": 8,
-  "name": "Carte épurée - IGN",
+  "name": "Standard map - IGN",
   "metadata": {
-    "name": "Carte épurée - IGN",
-    "description": "Un style sobre et discret de contextualisation géographique, adapté pour mettre en avant vos données.",
-    "usage": "Recommandé pour les applications cartographiques générales.",
-    "url": "https://betagouv.github.io/styles-de-cartes/maps/map_simplified_ign.json",
+    "fr": {
+      "name": "Carte standard - IGN",
+      "description": "Une carte couleur de contextualisation géographique, adapté à la plupart des usages.",
+      "use": "Recommandé pour les applications cartographiques générales. Ses couleurs légères permettent une superposition d'éléments, comme des marqueurs et différents types de données.",
+      "accessibility": "Les contrastes entre les toponymes et les différents aplats des zones géographiques sont travaillés ain d'être bien perceptibles selon une diversité de perceptions visuelles."
+    },
+    "en": {
+      "name": "Standard map - IGN",
+      "description": "A colorful map for geographic contextualization, suitable for most uses.",
+      "use": "Recommended for general cartographic applications. Its light colors allow elements such as markers and different types of data to be superimposed.",
+      "accessibility": "Contrasts between toponyms and the different flat areas of the geographical zones are worked on so as to be clearly perceptible according to a diversity of visual perceptions."
+    },
+    "url": "https://betagouv.github.io/styles-de-cartes/maps/map_standard_ign.json",
     "version": "0.9.0",
-    "author": "Fonds de cartes - IGN",
     "contact": "fonds-de-cartes@beta.gouv.fr",
     "license": "License Etalab 2.0",
-    "attribution": "© IGN",
-    "minzoom": 0,
-    "maxzoom": 18.9,
     "maputnik:renderer": "mlgljs"
   },
   "center": [2.5, 47],
   "zoom": 5,
+  "id": "map_standard_ign",
+  "owner": "© IGN",
   "sources": {
     "plan_ign": {
       "type": "vector",
@@ -6914,7 +6921,5 @@
         "text-halo-blur": 1
       }
     }
-  ],
-  "id": "Carte épurée - IGN",
-  "owner": "Startup d'État Fonds de cartes - IGN"
+  ]
 }
