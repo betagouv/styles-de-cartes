@@ -1,18 +1,25 @@
 {
   "version": 8,
-  "name": "Carte épurée - IGN",
+  "name": "Light map - IGN",
+  "id": "map_light_ign",
+  "owner": "© IGN",
   "metadata": {
-    "name": "Carte épurée - IGN",
-    "description": "Un style sobre et discret de contextualisation géographique, adapté pour mettre en avant vos données.",
-    "usage": "Recommandé pour les applications cartographiques générales.",
-    "url": "https://betagouv.github.io/styles-de-cartes/maps/map_simplified_ign.json",
+    "fr": {
+      "name": "Carte désaturée - IGN",
+      "description": "",
+      "use": "",
+      "accessibility": ""
+    },
+    "en": {
+      "name": "Light map - IGN",
+      "description": "",
+      "use": "",
+      "accessibility": ""
+    },
+    "url": "https://betagouv.github.io/styles-de-cartes/maps/map_light_ign.json",
     "version": "0.9.0",
-    "author": "Fonds de cartes - IGN",
     "contact": "fonds-de-cartes@beta.gouv.fr",
-    "license": "License Etalab 2.0",
-    "attribution": "© IGN",
-    "minzoom": 0,
-    "maxzoom": 18.9,
+    "license": "Etalab 2.0",
     "maputnik:renderer": "mlgljs"
   },
   "center": [2.5, 47],
@@ -6904,7 +6911,5 @@
         "text-halo-blur": 1
       }
     }
-  ],
-  "id": "Carte épurée - IGN",
-  "owner": "Startup d'État Fonds de cartes - IGN"
+  ]
 }

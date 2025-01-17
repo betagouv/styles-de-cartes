@@ -1,6 +1,8 @@
 {
   "version": 8,
   "name": "Standard map - IGN",
+  "id": "map_standard_ign",
+  "owner": "© IGN",
   "metadata": {
     "fr": {
       "name": "Carte standard - IGN",
@@ -17,13 +19,11 @@
     "url": "https://betagouv.github.io/styles-de-cartes/maps/map_standard_ign.json",
     "version": "0.9.0",
     "contact": "fonds-de-cartes@beta.gouv.fr",
-    "license": "License Etalab 2.0",
+    "license": "Etalab 2.0",
     "maputnik:renderer": "mlgljs"
   },
   "center": [2.5, 47],
   "zoom": 5,
-  "id": "map_standard_ign",
-  "owner": "© IGN",
   "sources": {
     "plan_ign": {
       "type": "vector",
