@@ -12,7 +12,7 @@
     "license": "License Etalab 2.0",
     "attribution": "© IGN",
     "minzoom": 0,
-    "maxzoom": 24,
+    "maxzoom": 19,
     "maputnik:renderer": "mlgljs"
   },
   "center": [2.5, 47],
