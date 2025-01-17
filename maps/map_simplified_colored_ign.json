@@ -12,7 +12,7 @@
     "license": "License Etalab 2.0",
     "attribution": "© IGN",
     "minzoom": 0,
-    "maxzoom": 19,
+    "maxzoom": 24,
     "maputnik:renderer": "mlgljs"
   },
   "center": [2.5, 47],
@@ -20,7 +20,8 @@
   "sources": {
     "plan_ign": {
       "type": "vector",
-      "tiles": ["https://data.geopf.fr/tms/1.0.0/PLAN.IGN/{z}/{x}/{y}.pbf"]
+      "tiles": ["https://data.geopf.fr/tms/1.0.0/PLAN.IGN/{z}/{x}/{y}.pbf"],
+      "maxzoom": 19
     }
   },
   "sprite": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sprite/PlanIgn",

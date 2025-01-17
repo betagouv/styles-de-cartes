@@ -9,13 +9,14 @@
         "https://data.geopf.fr/wmts?&REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&TILEMATRIXSET=PM&LAYER=ORTHOIMAGERY.ORTHOPHOTOS&STYLE=normal&FORMAT=image%2Fjpeg&TILECOL={x}&TILEROW={y}&TILEMATRIX={z}"
       ],
       "minzoom": 0,
-      "maxzoom": 19,
+      "maxzoom": 24,
       "scheme": "xyz",
       "tileSize": 512
     },
     "plan_ign": {
       "type": "vector",
-      "tiles": ["https://data.geopf.fr/tms/1.0.0/PLAN.IGN/{z}/{x}/{y}.pbf"]
+      "tiles": ["https://data.geopf.fr/tms/1.0.0/PLAN.IGN/{z}/{x}/{y}.pbf"],
+      "maxzoom": 19
     }
   },
   "sprite": "",
