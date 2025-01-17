@@ -1590,7 +1590,7 @@
         "NECROPOLE_NATIONALE"
       ],
       "layout": {"visibility": "visible"},
-      "paint": {"fill-color": "rgba(204, 223, 201, 1)", "fill-opacity": 1}
+      "paint": {"fill-color": "rgba(188, 223, 184, 1)", "fill-opacity": 1}
     },
     {
       "id": "bati sportif surfacique fond",
@@ -1636,7 +1636,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(204, 208, 192, 1)",
+        "line-color": "rgba(183, 206, 182, 1)",
         "line-width": 1,
         "line-opacity": ["interpolate", ["linear"], ["zoom"], 14, 0, 15, 1]
       }
