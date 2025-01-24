@@ -6,7 +6,7 @@
   "metadata": {
     "fr": {
       "name": "Carte standard",
-      "description": "Une carte couleur de contextualisation géographique, adapté à la plupart des usages.",
+      "description": "Une carte couleur de contextualisation géographique, adaptée à la plupart des usages.",
       "use": "Recommandé pour les applications cartographiques générales. Ses couleurs légères permettent une superposition d'éléments, comme des marqueurs et différents types de données.",
       "accessibility": "Les contrastes entre les toponymes et les différents aplats des zones géographiques sont travaillés ain d'être bien perceptibles selon une diversité de perceptions visuelles."
     },
