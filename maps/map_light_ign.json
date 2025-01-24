@@ -1,21 +1,22 @@
 {
   "version": 8,
-  "name": "Light map - IGN",
+  "name": "Light map",
   "id": "map_light_ign",
   "owner": "© IGN",
   "metadata": {
     "fr": {
-      "name": "Carte désaturée - IGN",
+      "name": "Carte désaturée",
       "description": "",
       "use": "",
       "accessibility": ""
     },
     "en": {
-      "name": "Light map - IGN",
+      "name": "Light map",
       "description": "",
       "use": "",
       "accessibility": ""
     },
+    "source": "IGN",
     "url": "https://betagouv.github.io/styles-de-cartes/maps/map_light_ign.json",
     "version": "0.9.0",
     "contact": "fonds-de-cartes@beta.gouv.fr",
