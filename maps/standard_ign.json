@@ -1,17 +1,17 @@
 {
   "version": 8,
-  "name": "Standard map",
-  "id": "map_standard_ign",
+  "name": "Standard",
+  "id": "standard_ign",
   "owner": "© IGN",
   "metadata": {
     "fr": {
-      "name": "Carte standard",
+      "name": "Standard",
       "description": "Une carte couleur de contextualisation géographique, adaptée à la plupart des usages.",
       "use": "Recommandé pour les applications cartographiques générales. Ses couleurs légères permettent une superposition d'éléments, comme des marqueurs et différents types de données.",
       "accessibility": "Les contrastes entre les toponymes et les différents aplats des zones géographiques sont travaillés ain d'être bien perceptibles selon une diversité de perceptions visuelles."
     },
     "en": {
-      "name": "Standard map",
+      "name": "Standard",
       "description": "A colorful map for geographic contextualization, suitable for most uses.",
       "use": "Recommended for general cartographic applications. Its light colors allow elements such as markers and different types of data to be superimposed.",
       "accessibility": "Contrasts between toponyms and the different flat areas of the geographical zones are worked on so as to be clearly perceptible according to a diversity of visual perceptions."
