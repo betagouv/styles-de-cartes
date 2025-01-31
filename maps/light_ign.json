@@ -1,17 +1,17 @@
 {
   "version": 8,
-  "name": "Light map",
-  "id": "map_light_ign",
+  "name": "Light",
+  "id": "light_ign",
   "owner": "© IGN",
   "metadata": {
     "fr": {
-      "name": "Carte désaturée",
+      "name": "Désaturée",
       "description": "",
       "use": "",
       "accessibility": ""
     },
     "en": {
-      "name": "Light map",
+      "name": "Light",
       "description": "",
       "use": "",
       "accessibility": ""
