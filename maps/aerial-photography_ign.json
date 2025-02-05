@@ -18,8 +18,8 @@
       "maxzoom": 18.9
     }
   },
-  "sprite": "",
-  "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
+  "sprite": "https://openmaptiles.github.io/osm-bright-gl-style/sprite",
+  "glyphs": "https://openmaptiles.geo.data.gouv.fr/fonts/{fontstack}/{range}.pbf",
   "layers": [
     {"id": "photographies_aeriennes", "type": "raster", "source": "Ortho IGN"},
     {
