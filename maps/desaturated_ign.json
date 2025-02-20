@@ -1,7 +1,7 @@
 {
   "version": 8,
-  "name": "Light",
-  "id": "light_ign",
+  "name": "Desaturated",
+  "id": "desaturated_ign",
   "owner": "© IGN",
   "metadata": {
     "fr": {
@@ -11,7 +11,7 @@
       "accessibility": ""
     },
     "en": {
-      "name": "Light",
+      "name": "Desaturated",
       "description": "",
       "use": "",
       "accessibility": ""
