@@ -1,7 +1,7 @@
 {
   "version": 8,
-  "name": "Light",
-  "id": "light_ign",
+  "name": "Desaturated",
+  "id": "desaturated_ign",
   "owner": "© IGN",
   "metadata": {
     "fr": {
@@ -11,14 +11,14 @@
       "accessibility": ""
     },
     "en": {
-      "name": "Light",
+      "name": "Desaturated",
       "description": "",
       "use": "",
       "accessibility": ""
     },
     "source": "IGN",
-    "url": "https://betagouv.github.io/styles-de-cartes/maps/map_light_ign.json",
-    "thumbnail": "https://betagouv.github.io/styles-de-cartes/thumbnails/thumbnail_map_light_ign.webp",
+    "url": "https://betagouv.github.io/styles-de-cartes/maps/desaturated_ign.json",
+    "thumbnail": "https://betagouv.github.io/styles-de-cartes/thumbnails/thumbnail_desaturated_ign.webp",
     "version": "0.9.0",
     "contact": "fonds-de-cartes@beta.gouv.fr",
     "license": "Etalab 2.0",
@@ -5332,7 +5332,7 @@
       "type": "symbol",
       "source": "plan_ign",
       "source-layer": "toponyme_bati_ponc",
-      "minzoom": 13,
+      "minzoom": 14,
       "filter": [
         "all",
         ["==", "symbo", "PHARE"],
@@ -5356,7 +5356,7 @@
       "type": "symbol",
       "source": "plan_ign",
       "source-layer": "toponyme_bati_ponc",
-      "minzoom": 12,
+      "minzoom": 13,
       "filter": [
         "in",
         "txt_typo",
@@ -5690,6 +5690,7 @@
       "type": "symbol",
       "source": "plan_ign",
       "source-layer": "toponyme_ocs_ponc",
+      "minzoom": 14,
       "filter": [
         "all",
         ["==", "symbo", "LIEU-DIT_NON_HABITE"],
@@ -5843,6 +5844,7 @@
       "type": "symbol",
       "source": "plan_ign",
       "source-layer": "toponyme_ocs_ponc",
+      "minzoom": 14,
       "filter": [
         "all",
         ["==", "symbo", "LIEU-DIT_NON_HABITE"],
@@ -5921,6 +5923,7 @@
       "type": "symbol",
       "source": "plan_ign",
       "source-layer": "toponyme_ocs_ponc",
+      "minzoom": 14,
       "filter": [
         "all",
         ["==", "symbo", "LIEU-DIT_NON_HABITE"],
@@ -6124,59 +6127,6 @@
       }
     },
     {
-      "id": "toponyme localite n0 typoA9",
-      "type": "symbol",
-      "source": "plan_ign",
-      "source-layer": "toponyme_localite_ponc",
-      "minzoom": 14,
-      "maxzoom": 18,
-      "filter": ["==", "txt_typo", "TYPO_A_9"],
-      "layout": {
-        "visibility": "visible",
-        "symbol-placement": "point",
-        "text-field": "{texte}",
-        "text-size": {"stops": [[15, 11.5], [17, 14]]},
-        "text-allow-overlap": true,
-        "text-anchor": "center",
-        "text-padding": 1,
-        "text-font": ["Source Sans Pro Regular"]
-      },
-      "paint": {
-        "text-color": "#000000",
-        "text-halo-color": "rgba(255, 255, 255, 0.5)",
-        "text-halo-width": 1
-      }
-    },
-    {
-      "id": "toponyme localite n0 typoA8 non commune",
-      "type": "symbol",
-      "source": "plan_ign",
-      "source-layer": "toponyme_localite_ponc",
-      "minzoom": 13,
-      "maxzoom": 18,
-      "filter": [
-        "all",
-        ["!=", "symbo", "COMMUNE_FUSIONNEE"],
-        ["!=", "symbo", "COMMUNE_CHEF_LIEU"],
-        ["==", "txt_typo", "TYPO_A_8"]
-      ],
-      "layout": {
-        "visibility": "visible",
-        "symbol-placement": "point",
-        "text-field": "{texte}",
-        "text-size": {"stops": [[15, 12], [17, 15]]},
-        "text-allow-overlap": true,
-        "text-anchor": "center",
-        "text-padding": 1,
-        "text-font": ["Source Sans Pro Regular"]
-      },
-      "paint": {
-        "text-color": "#000000",
-        "text-halo-color": "rgba(255, 255, 255, 0.5)",
-        "text-halo-width": 1
-      }
-    },
-    {
       "id": "toponyme - limite parc marin",
       "type": "symbol",
       "source": "plan_ign",
@@ -6230,6 +6180,59 @@
       }
     },
     {
+      "id": "toponyme localite n0 typoA9",
+      "type": "symbol",
+      "source": "plan_ign",
+      "source-layer": "toponyme_localite_ponc",
+      "minzoom": 14,
+      "maxzoom": 18,
+      "filter": ["==", "txt_typo", "TYPO_A_9"],
+      "layout": {
+        "visibility": "visible",
+        "symbol-placement": "point",
+        "text-field": "{texte}",
+        "text-size": 12,
+        "text-allow-overlap": true,
+        "text-anchor": "center",
+        "text-padding": 1,
+        "text-font": ["Source Sans Pro Regular"]
+      },
+      "paint": {
+        "text-color": "#000000",
+        "text-halo-color": "rgba(255, 255, 255, 0.5)",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "toponyme localite n0 typoA8 non commune",
+      "type": "symbol",
+      "source": "plan_ign",
+      "source-layer": "toponyme_localite_ponc",
+      "minzoom": 13,
+      "maxzoom": 18,
+      "filter": [
+        "all",
+        ["!=", "symbo", "COMMUNE_FUSIONNEE"],
+        ["!=", "symbo", "COMMUNE_CHEF_LIEU"],
+        ["==", "txt_typo", "TYPO_A_8"]
+      ],
+      "layout": {
+        "visibility": "visible",
+        "symbol-placement": "point",
+        "text-field": "{texte}",
+        "text-size": 12,
+        "text-allow-overlap": true,
+        "text-anchor": "center",
+        "text-padding": 1,
+        "text-font": ["Source Sans Pro Regular"]
+      },
+      "paint": {
+        "text-color": "#000000",
+        "text-halo-color": "rgba(255, 255, 255, 0.5)",
+        "text-halo-width": 1
+      }
+    },
+    {
       "id": "toponyme localite n0 typoA7 non commune",
       "type": "symbol",
       "source": "plan_ign",
@@ -6246,7 +6249,7 @@
         "visibility": "visible",
         "symbol-placement": "point",
         "text-field": "{texte}",
-        "text-size": {"stops": [[15, 13], [17, 16]]},
+        "text-size": 12,
         "text-allow-overlap": true,
         "text-anchor": "center",
         "text-padding": 1,
@@ -6276,7 +6279,7 @@
         "visibility": "visible",
         "symbol-placement": "point",
         "text-field": "{texte}",
-        "text-size": {"stops": [[15, 15], [17, 18]]},
+        "text-size": 12,
         "text-allow-overlap": true,
         "text-anchor": "center",
         "text-padding": 1,
@@ -6305,7 +6308,7 @@
         "visibility": "visible",
         "symbol-placement": "point",
         "text-field": "{texte}",
-        "text-size": 17,
+        "text-size": 13,
         "text-allow-overlap": true,
         "text-anchor": "center",
         "text-padding": 1,
@@ -6334,7 +6337,7 @@
         "visibility": "visible",
         "symbol-placement": "point",
         "text-field": "{texte}",
-        "text-size": 19,
+        "text-size": 14,
         "text-allow-overlap": true,
         "text-anchor": "center",
         "text-padding": 1,
@@ -6363,7 +6366,36 @@
         "visibility": "visible",
         "symbol-placement": "point",
         "text-field": "{texte}",
-        "text-size": 21,
+        "text-size": 15,
+        "text-allow-overlap": true,
+        "text-anchor": "center",
+        "text-padding": 1,
+        "text-font": ["Source Sans Pro Regular"]
+      },
+      "paint": {
+        "text-color": "#000000",
+        "text-halo-color": "rgba(255, 255, 255, 0.5)",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "toponyme localite n0 typoA1 non commune",
+      "type": "symbol",
+      "source": "plan_ign",
+      "source-layer": "toponyme_localite_ponc",
+      "minzoom": 13,
+      "maxzoom": 16,
+      "filter": [
+        "all",
+        ["!=", "symbo", "COMMUNE_FUSIONNEE"],
+        ["!=", "symbo", "COMMUNE_CHEF_LIEU"],
+        ["==", "txt_typo", "TYPO_A_1"]
+      ],
+      "layout": {
+        "visibility": "visible",
+        "symbol-placement": "point",
+        "text-field": "{texte}",
+        "text-size": 16,
         "text-allow-overlap": true,
         "text-anchor": "center",
         "text-padding": 1,
@@ -6391,7 +6423,7 @@
         "visibility": "visible",
         "symbol-placement": "point",
         "text-field": "{texte}",
-        "text-size": {"stops": [[15, 12], [17, 15]]},
+        "text-size": 12,
         "text-allow-overlap": true,
         "text-anchor": "center",
         "text-padding": 1,
@@ -6420,7 +6452,7 @@
         "visibility": "visible",
         "symbol-placement": "point",
         "text-field": "{texte}",
-        "text-size": {"stops": [[15, 13], [17, 16]]},
+        "text-size": 12,
         "text-allow-overlap": true,
         "text-anchor": "center",
         "text-padding": 1,
@@ -6449,40 +6481,11 @@
         "visibility": "visible",
         "symbol-placement": "point",
         "text-field": "{texte}",
-        "text-size": {"stops": [[15, 15], [17, 18]]},
+        "text-size": 12,
         "text-allow-overlap": true,
         "text-anchor": "center",
         "text-padding": 1,
         "text-transform": "none",
-        "text-font": ["Source Sans Pro Regular"]
-      },
-      "paint": {
-        "text-color": "#000000",
-        "text-halo-color": "rgba(255, 255, 255, 0.5)",
-        "text-halo-width": 1
-      }
-    },
-    {
-      "id": "toponyme localite n0 typoA1 non commune",
-      "type": "symbol",
-      "source": "plan_ign",
-      "source-layer": "toponyme_localite_ponc",
-      "minzoom": 13,
-      "maxzoom": 16,
-      "filter": [
-        "all",
-        ["!=", "symbo", "COMMUNE_FUSIONNEE"],
-        ["!=", "symbo", "COMMUNE_CHEF_LIEU"],
-        ["==", "txt_typo", "TYPO_A_1"]
-      ],
-      "layout": {
-        "visibility": "visible",
-        "symbol-placement": "point",
-        "text-field": "{texte}",
-        "text-size": 23,
-        "text-allow-overlap": true,
-        "text-anchor": "center",
-        "text-padding": 1,
         "text-font": ["Source Sans Pro Regular"]
       },
       "paint": {
@@ -6507,7 +6510,7 @@
         "visibility": "visible",
         "symbol-placement": "point",
         "text-field": "{texte}",
-        "text-size": 17,
+        "text-size": 13,
         "text-allow-overlap": true,
         "text-anchor": "center",
         "text-padding": 1,
@@ -6536,7 +6539,7 @@
         "visibility": "visible",
         "symbol-placement": "point",
         "text-field": "{texte}",
-        "text-size": 19,
+        "text-size": 14,
         "text-allow-overlap": true,
         "text-anchor": "center",
         "text-padding": 1,
@@ -6565,7 +6568,7 @@
         "visibility": "visible",
         "symbol-placement": "point",
         "text-field": "{texte}",
-        "text-size": 21,
+        "text-size": 15,
         "text-allow-overlap": true,
         "text-anchor": "center",
         "text-padding": 1,
@@ -6594,7 +6597,7 @@
         "visibility": "visible",
         "symbol-placement": "point",
         "text-field": "{texte}",
-        "text-size": 23,
+        "text-size": 16,
         "text-allow-overlap": true,
         "text-anchor": "center",
         "text-padding": 1,
@@ -6612,7 +6615,7 @@
       "type": "symbol",
       "source": "plan_ign",
       "source-layer": "toponyme_localite_ponc",
-      "minzoom": 11,
+      "minzoom": 12,
       "maxzoom": 13,
       "filter": ["in", "txt_typo", "TYPO_A_6", "TYPO_A_7"],
       "layout": {
@@ -6639,7 +6642,7 @@
       "type": "symbol",
       "source": "plan_ign",
       "source-layer": "toponyme_localite_ponc",
-      "minzoom": 10,
+      "minzoom": 12,
       "maxzoom": 13,
       "filter": [
         "in",
@@ -6680,7 +6683,7 @@
       "type": "symbol",
       "source": "plan_ign",
       "source-layer": "toponyme_localite_ponc",
-      "minzoom": 9,
+      "minzoom": 11,
       "maxzoom": 13,
       "filter": [
         "in",
@@ -6713,7 +6716,7 @@
       "type": "symbol",
       "source": "plan_ign",
       "source-layer": "toponyme_localite_ponc",
-      "minzoom": 7,
+      "minzoom": 7.5,
       "maxzoom": 13,
       "filter": [
         "in",
@@ -6729,7 +6732,7 @@
         "icon-image": "Localite",
         "icon-size": 0.21,
         "text-field": "{texte}",
-        "text-size": 15,
+        "text-size": {"stops": [[7.5, 12], [12, 13]]},
         "text-allow-overlap": false,
         "text-anchor": "bottom-left",
         "text-offset": [0.3, 0.1],
@@ -6765,8 +6768,8 @@
         "icon-image": "Localite",
         "icon-size": 0.25,
         "text-field": "{texte}",
-        "text-size": {"stops": [[5, 12], [7, 16]]},
-        "text-allow-overlap": true,
+        "text-size": {"stops": [[5, 12], [7, 14]]},
+        "text-allow-overlap": false,
         "text-anchor": "bottom-left",
         "text-offset": [0.3, 0.2],
         "text-padding": 1,
@@ -6800,7 +6803,7 @@
         "icon-image": "Localite",
         "icon-size": 0.2,
         "text-field": "{texte}",
-        "text-size": {"stops": [[3, 12], [6, 18]]},
+        "text-size": {"stops": [[3, 12], [6, 15]]},
         "text-allow-overlap": false,
         "text-anchor": "bottom-left",
         "text-offset": [0.25, -0.1],
