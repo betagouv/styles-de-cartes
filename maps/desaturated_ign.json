@@ -1517,8 +1517,8 @@
       ],
       "layout": {"visibility": "visible"},
       "paint": {
-        "fill-color": "rgba(216, 216, 216, 1)",
-        "fill-outline-color": "rgba(164, 164, 164, 1)",
+        "fill-color": "#eeeeee",
+        "fill-outline-color": "#c1c1c1",
         "fill-opacity": ["interpolate", ["linear"], ["zoom"], 14, 0, 15, 1],
         "fill-antialias": true
       }
@@ -1530,7 +1530,7 @@
       "source-layer": "bati_surf",
       "filter": ["in", "symbo", "PISTE_DUR", "PISTE_HERBE"],
       "layout": {"visibility": "visible"},
-      "paint": {"fill-color": "rgba(216, 216, 216, 1)"}
+      "paint": {"fill-color": "#eeeeee"}
     },
     {
       "id": "construction linéaire - mur",
