@@ -1,12 +1,34 @@
 {
   "version": 8,
-  "name": "Empty Style",
-  "metadata": {"maputnik:renderer": "mlgljs"},
+  "name": "Aerial photography",
+  "metadata": {
+    "fr": {
+      "name": "Photographies aériennes",
+      "description": "",
+      "use": "",
+      "accessibility": ""
+    },
+    "en": {
+      "name": "Aerial photography",
+      "description": "",
+      "use": "",
+      "accessibility": ""
+    },
+    "source": "IGN",
+    "url": "https://betagouv.github.io/styles-de-cartes/maps/aerial-photography_ign.json",
+    "thumbnail": "https://betagouv.github.io/styles-de-cartes/thumbnails/thumbnail_aerial_photography_ign.webp",
+    "version": "0.9.0",
+    "contact": "fonds-de-cartes@beta.gouv.fr",
+    "license": "Etalab 2.0",
+    "maputnik:renderer": "mlgljs"
+  },
+  "center": [2.5, 47],
+  "zoom": 5,
   "sources": {
     "Ortho IGN": {
       "type": "raster",
       "tiles": [
-        "https://data.geopf.fr/wmts?&REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&TILEMATRIXSET=PM&LAYER=ORTHOIMAGERY.ORTHOPHOTOS&STYLE=normal&FORMAT=image%2Fjpeg&TILECOL={x}&TILEROW={y}&TILEMATRIX={z}"
+        "https://data.geopf.fr/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE=normal&TILEMATRIXSET=PM&FORMAT=image%2Fjpeg&LAYER=ORTHOIMAGERY.ORTHOPHOTOS&TILECOL={x}&TILEROW={y}&TILEMATRIX={z}"
       ],
       "minzoom": 0,
       "maxzoom": 18.9,
@@ -404,5 +426,6 @@
       }
     }
   ],
-  "id": "i6eoyky"
+  "id": "aerial-photography_ign",
+  "owner": "© IGN"
 }
