@@ -1,8 +1,6 @@
 {
   "version": 8,
   "name": "Standard",
-  "id": "standard_ign",
-  "owner": "© IGN",
   "metadata": {
     "fr": {
       "name": "Standard",
@@ -6631,13 +6629,10 @@
       "layout": {
         "visibility": "visible",
         "symbol-placement": "point",
-        "icon-image": "Localite",
-        "icon-size": 0.21,
         "text-field": "{texte}",
         "text-size": 12.5,
         "text-allow-overlap": false,
-        "text-anchor": "bottom-left",
-        "text-offset": [0.3, 0.1],
+        "text-anchor": "center",
         "text-padding": 1,
         "text-font": ["Source Sans Pro Regular"]
       },
@@ -6672,13 +6667,10 @@
       "layout": {
         "visibility": "visible",
         "symbol-placement": "point",
-        "icon-image": "Localite",
-        "icon-size": 0.21,
         "text-field": "{texte}",
         "text-size": 11.5,
         "text-allow-overlap": false,
-        "text-anchor": "bottom-left",
-        "text-offset": [0.3, 0.1],
+        "text-anchor": "center",
         "text-padding": 1,
         "text-font": ["Source Sans Pro Regular"]
       },
@@ -6705,13 +6697,11 @@
       "layout": {
         "visibility": "visible",
         "symbol-placement": "point",
-        "icon-image": "Localite",
-        "icon-size": 0.21,
+        "icon-size": 0.4,
         "text-field": "{texte}",
         "text-size": 13,
         "text-allow-overlap": false,
-        "text-anchor": "bottom-left",
-        "text-offset": [0.3, 0.1],
+        "text-anchor": "center",
         "text-padding": 1,
         "text-font": ["Source Sans Pro Regular"]
       },
@@ -6739,13 +6729,10 @@
       "layout": {
         "visibility": "visible",
         "symbol-placement": "point",
-        "icon-image": "Localite",
-        "icon-size": 0.21,
         "text-field": "{texte}",
         "text-size": {"stops": [[7.5, 12], [12, 13]]},
         "text-allow-overlap": false,
-        "text-anchor": "bottom-left",
-        "text-offset": [0.3, 0.1],
+        "text-anchor": "center",
         "text-padding": 1,
         "text-font": ["Source Sans Pro Regular"],
         "text-transform": "none"
@@ -6761,7 +6748,7 @@
       "type": "symbol",
       "source": "plan_ign",
       "source-layer": "toponyme_localite_ponc",
-      "minzoom": 5,
+      "minzoom": 7,
       "maxzoom": 13,
       "filter": [
         "in",
@@ -6775,13 +6762,10 @@
       "layout": {
         "visibility": "visible",
         "symbol-placement": "point",
-        "icon-image": "Localite",
-        "icon-size": 0.25,
         "text-field": "{texte}",
         "text-size": {"stops": [[5, 12], [7, 14]]},
         "text-allow-overlap": false,
-        "text-anchor": "bottom-left",
-        "text-offset": [0.3, 0.2],
+        "text-anchor": "center",
         "text-padding": 1,
         "text-transform": "none",
         "text-font": ["Source Sans Pro Bold"]
@@ -6789,7 +6773,8 @@
       "paint": {
         "text-color": "#000000",
         "text-halo-color": "rgba(255, 255, 255, 0.5)",
-        "text-halo-width": 1
+        "text-halo-width": 1,
+        "icon-halo-width": 4
       }
     },
     {
@@ -6797,7 +6782,7 @@
       "type": "symbol",
       "source": "plan_ign",
       "source-layer": "toponyme_localite_ponc",
-      "minzoom": 3,
+      "minzoom": 7,
       "maxzoom": 13,
       "filter": [
         "in",
@@ -6810,8 +6795,77 @@
       "layout": {
         "visibility": "visible",
         "symbol-placement": "point",
-        "icon-image": "Localite",
-        "icon-size": 0.2,
+        "text-field": "{texte}",
+        "text-size": {"stops": [[3, 12], [6, 15]]},
+        "text-allow-overlap": false,
+        "text-anchor": "center",
+        "text-padding": 1,
+        "text-transform": "none",
+        "text-font": ["Source Sans Pro Bold"]
+      },
+      "paint": {
+        "text-color": "#000000",
+        "text-halo-color": "rgba(255, 255, 255, 0.5)",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "toponyme localite importance 2 avec point",
+      "type": "symbol",
+      "source": "plan_ign",
+      "source-layer": "toponyme_localite_ponc",
+      "minzoom": 5,
+      "maxzoom": 7,
+      "filter": [
+        "in",
+        "txt_typo",
+        "commune 2",
+        "TYPO_A_2",
+        "BAT_COMMUNE_2",
+        "BAT_COMMUNE-2",
+        "BAT_COMMUNE_2_T"
+      ],
+      "layout": {
+        "visibility": "visible",
+        "symbol-placement": "point",
+        "icon-image": "circle_11",
+        "icon-size": 0.5,
+        "text-field": "{texte}",
+        "text-size": {"stops": [[5, 12], [7, 14]]},
+        "text-allow-overlap": false,
+        "text-anchor": "bottom-left",
+        "text-offset": [0.3, 0.2],
+        "text-padding": 1,
+        "text-transform": "none",
+        "text-font": ["Source Sans Pro Bold"]
+      },
+      "paint": {
+        "text-color": "#000000",
+        "text-halo-color": "rgba(255, 255, 255, 0.5)",
+        "text-halo-width": 1,
+        "icon-halo-width": 4
+      }
+    },
+    {
+      "id": "toponyme localite importance 1  avec point",
+      "type": "symbol",
+      "source": "plan_ign",
+      "source-layer": "toponyme_localite_ponc",
+      "minzoom": 3,
+      "maxzoom": 7,
+      "filter": [
+        "in",
+        "txt_typo",
+        "commune 1",
+        "TYPO_A_1",
+        "BAT_COMMUNE_1",
+        "BAT_COMMUNE_1_T"
+      ],
+      "layout": {
+        "visibility": "visible",
+        "symbol-placement": "point",
+        "icon-image": "circle_11",
+        "icon-size": 0.5,
         "text-field": "{texte}",
         "text-size": {"stops": [[3, 12], [6, 15]]},
         "text-allow-overlap": false,
@@ -6824,7 +6878,8 @@
       "paint": {
         "text-color": "#000000",
         "text-halo-color": "rgba(255, 255, 255, 0.5)",
-        "text-halo-width": 1
+        "text-halo-width": 1,
+        "icon-opacity": 1
       }
     },
     {
@@ -6926,5 +6981,7 @@
         "text-halo-blur": 1
       }
     }
-  ]
+  ],
+  "id": "standard_ign",
+  "owner": "© IGN"
 }
