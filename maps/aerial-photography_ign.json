@@ -1868,7 +1868,11 @@
         "text-padding": 1,
         "text-font": ["Source Sans Pro Italic"]
       },
-      "paint": {"text-color": "#FFFFFF", "text-halo-color": "#161616"}
+      "paint": {
+        "text-color": "rgba(255, 201, 201, 1)",
+        "text-halo-color": "#161616",
+        "text-halo-width": 1
+      }
     },
     {
       "id": "toponyme bati ponc zai_15",
@@ -1886,7 +1890,11 @@
         "text-padding": 1,
         "text-font": ["Source Sans Pro Italic"]
       },
-      "paint": {"text-color": "#FFFFFF", "text-halo-color": "#161616"}
+      "paint": {
+        "text-color": "rgba(255, 201, 201, 1)",
+        "text-halo-color": "#161616",
+        "text-halo-width": 1
+      }
     },
     {
       "id": "toponyme bati ponc zai vert",
@@ -1905,7 +1913,7 @@
         "text-font": ["Source Sans Pro Italic"]
       },
       "paint": {
-        "text-color": "#FFFFFF",
+        "text-color": "rgba(255, 201, 201, 1)",
         "text-halo-color": "#161616",
         "text-halo-width": 1
       }
@@ -1927,7 +1935,7 @@
         "text-font": ["Source Sans Pro Italic"]
       },
       "paint": {
-        "text-color": "#FFFFFF",
+        "text-color": "rgba(255, 201, 201, 1)",
         "text-halo-color": "#161616",
         "text-halo-width": 1
       }
@@ -1953,7 +1961,7 @@
         "text-font": ["Source Sans Pro Italic"]
       },
       "paint": {
-        "text-color": "#FFFFFF",
+        "text-color": "rgba(255, 201, 201, 1)",
         "text-halo-color": "#161616",
         "text-halo-width": 1
       }
@@ -1979,7 +1987,7 @@
         "text-font": ["Source Sans Pro Italic"]
       },
       "paint": {
-        "text-color": "#FFFFFF",
+        "text-color": "rgba(255, 201, 201, 1)",
         "text-halo-color": "#161616",
         "text-halo-width": 1
       }
