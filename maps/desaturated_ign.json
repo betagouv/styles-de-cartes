@@ -4,7 +4,7 @@
   "metadata": {
     "fr": {
       "name": "Désaturée",
-      "description": "Une carte en niveaux de gris avec des constrastes doux, pour un fond cartographique discret.",
+      "description": "Une carte en niveaux de gris avec des contrastes doux, pour un fond cartographique discret.",
       "use": "Recommandé pour des applications de datavisualisation et la superposition de données thématiques, notamment des aplats de couleurs. La discrétion de la carte permet de mettre en valeur vos données sans interférences visuelles.",
       "accessibility": "Les contrastes adoucis permettent une bonne visibilité de vos données superposées. La lisibilité des toponymes est préservée."
     },
