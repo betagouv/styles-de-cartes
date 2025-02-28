@@ -16,7 +16,7 @@
     },
     "source": "IGN",
     "url": "https://betagouv.github.io/styles-de-cartes/maps/aerial-photography_ign.json",
-    "thumbnail": "https://betagouv.github.io/styles-de-cartes/thumbnails/thumbnail_aerial_photography_ign.webp",
+    "thumbnail": "https://betagouv.github.io/styles-de-cartes/thumbnails/thumbnail_aerial-photography_ign.webp",
     "version": "0.9.0",
     "contact": "fonds-de-cartes@beta.gouv.fr",
     "license": "Etalab 2.0",
