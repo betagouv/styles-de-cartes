@@ -4,15 +4,15 @@
   "metadata": {
     "fr": {
       "name": "Photographies aériennes",
-      "description": "",
-      "use": "",
-      "accessibility": ""
+      "description": "Une carte basée sur des photographies aériennes haute résolution, enrichie de surcouches vectorielles pour une meilleure lisibilité.",
+      "use": "Recommandé pour visualiser le territoire tel qu'il apparaît vu du ciel, avec des repères cartographiques facilitant l'orientation. Idéal pour l'observation détaillée du terrain, de l'occupation des sols et du bâti.",
+      "accessibility": "Les toponymes sont affichés avec des contrastes renforcés sur le fond photographique pour garantir leur lisibilité."
     },
     "en": {
       "name": "Aerial photography",
-      "description": "",
-      "use": "",
-      "accessibility": ""
+      "description": "A map based on high-resolution aerial photographs, enhanced with vector overlays for better readability.",
+      "use": "Recommended for viewing the territory as it appears from the sky, with cartographic references facilitating orientation. Ideal for detailed observation of terrain, land use and buildings.",
+      "accessibility": "Place names are displayed with enhanced contrast on the photographic background to ensure their readability."
     },
     "source": "IGN",
     "url": "https://betagouv.github.io/styles-de-cartes/maps/aerial-photography_ign.json",
@@ -1476,7 +1476,7 @@
         "line-color": "#e5e5e5",
         "line-width": {
           "stops": [
-            [4, 0.5],
+            [6, 1.8],
             [9, 2.7],
             [14, 5.9],
             [15, 9],
