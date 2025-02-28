@@ -29,6 +29,15 @@
       "type": "vector",
       "tiles": ["https://data.geopf.fr/tms/1.0.0/PLAN.IGN/{z}/{x}/{y}.pbf"],
       "maxzoom": 18.9
+    },
+    "admin_express": {
+      "type": "vector",
+      "tiles": [
+        "https://data.geopf.fr/tms/1.0.0/ADMIN_EXPRESS/{z}/{x}/{y}.pbf"
+      ],
+      "minzoom": 0,
+      "maxzoom": 24,
+      "scheme": "xyz"
     }
   },
   "sprite": "https://openmaptiles.github.io/osm-bright-gl-style/sprite",
@@ -2549,133 +2558,6 @@
       }
     },
     {
-      "id": "limite admin - limite de commune",
-      "type": "line",
-      "source": "plan_ign",
-      "source-layer": "limite_lin",
-      "minzoom": 0,
-      "maxzoom": 24,
-      "filter": [
-        "in",
-        "symbo",
-        "LIM_COMMUNE",
-        "LIM_CANTON",
-        "LIM_ARRONDISSEMENT"
-      ],
-      "layout": {
-        "visibility": "none",
-        "line-cap": "butt",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "rgba(75, 75, 75, 1)",
-        "line-width": {"stops": [[5, 1], [14, 3.5]], "base": 0.8},
-        "line-dasharray": [
-          "step",
-          ["zoom"],
-          ["literal", [4, 0]],
-          9,
-          ["literal", [4, 1, 1, 1, 1, 1, 1, 1]]
-        ],
-        "line-opacity": 0.3
-      }
-    },
-    {
-      "id": "limite admin - limite de département",
-      "type": "line",
-      "source": "plan_ign",
-      "source-layer": "limite_lin",
-      "minzoom": 8,
-      "maxzoom": 24,
-      "filter": ["==", "symbo", "LIM_DEPARTEMENT"],
-      "layout": {
-        "visibility": "none",
-        "line-cap": "butt",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "rgba(75, 75, 75, 1)",
-        "line-width": {"stops": [[5, 1], [14, 3.5]], "base": 0.8},
-        "line-dasharray": [
-          "step",
-          ["zoom"],
-          ["literal", [4, 0]],
-          9,
-          ["literal", [4, 1, 1, 1, 1, 1]]
-        ],
-        "line-opacity": 0.3
-      }
-    },
-    {
-      "id": "limite admin - limite de région",
-      "type": "line",
-      "source": "plan_ign",
-      "source-layer": "limite_lin",
-      "minzoom": 0,
-      "maxzoom": 24,
-      "filter": ["==", "symbo", "LIM_REGION"],
-      "layout": {
-        "visibility": "none",
-        "line-cap": "butt",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "rgba(75, 75, 75, 1)",
-        "line-width": {"stops": [[5, 1], [14, 3.5]], "base": 0.8},
-        "line-dasharray": [
-          "step",
-          ["zoom"],
-          ["literal", [4, 0]],
-          9,
-          ["literal", [4, 1, 1, 1]]
-        ],
-        "line-opacity": 0.3
-      }
-    },
-    {
-      "id": "limite etat-copy",
-      "type": "line",
-      "source": "plan_ign",
-      "source-layer": "limite_lin",
-      "minzoom": 0,
-      "filter": ["in", "symbo", "LIM_ETAT", "LIM_ETAT_ETRANGER"],
-      "layout": {
-        "visibility": "none",
-        "line-cap": "butt",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "rgba(75, 75, 75, 1)",
-        "line-width": {"stops": [[5, 1], [14, 3.5]], "base": 0.8},
-        "line-dasharray": [
-          "step",
-          ["zoom"],
-          ["literal", [4, 0]],
-          9,
-          ["literal", [4, 1]]
-        ],
-        "line-opacity": 0.3
-      }
-    },
-    {
-      "id": "limite etat",
-      "type": "line",
-      "source": "plan_ign",
-      "source-layer": "limite_lin",
-      "minzoom": 0,
-      "filter": ["in", "symbo", "LIM_ETAT", "LIM_ETAT_ETRANGER"],
-      "layout": {
-        "visibility": "visible",
-        "line-cap": "butt",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "rgba(75, 75, 75, 1)",
-        "line-width": {"stops": [[5, 1], [14, 3.5]], "base": 0.8},
-        "line-opacity": 0.3
-      }
-    },
-    {
       "id": "hydro ponctuel",
       "type": "circle",
       "source": "plan_ign",
@@ -2792,6 +2674,66 @@
         "line-width": 5,
         "line-dasharray": [1, 10]
       }
+    },
+    {
+      "id": "Limites - Etat",
+      "type": "line",
+      "source": "plan_ign",
+      "source-layer": "limite_lin",
+      "minzoom": 0,
+      "filter": ["in", "symbo", "LIM_ETAT", "LIM_ETAT_ETRANGER"],
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "rgba(75, 75, 75, 1)",
+        "line-width": {"stops": [[5, 1], [14, 3.5]], "base": 0.8},
+        "line-opacity": 0.3
+      }
+    },
+    {
+      "id": "Limites - Region",
+      "type": "line",
+      "source": "admin_express",
+      "source-layer": "region",
+      "layout": {"visibility": "none"}
+    },
+    {
+      "id": "Limites - Departement",
+      "type": "line",
+      "source": "admin_express",
+      "source-layer": "departement",
+      "layout": {"visibility": "none"}
+    },
+    {
+      "id": "Limites - EPCI",
+      "type": "line",
+      "source": "admin_express",
+      "source-layer": "epci",
+      "layout": {"visibility": "none"}
+    },
+    {
+      "id": "Limites - Canton",
+      "type": "line",
+      "source": "admin_express",
+      "source-layer": "canton",
+      "layout": {"visibility": "none"}
+    },
+    {
+      "id": "Limites - Arrondissement",
+      "type": "line",
+      "source": "admin_express",
+      "source-layer": "arrondissement",
+      "layout": {"visibility": "none"}
+    },
+    {
+      "id": "Limites - Commune",
+      "type": "line",
+      "source": "admin_express",
+      "source-layer": "commune",
+      "layout": {"visibility": "none"}
     },
     {
       "id": "toponyme - ocs lineaire 3",
