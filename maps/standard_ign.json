@@ -6775,11 +6775,12 @@
         "text-field": "{texte}",
         "text-size": {"stops": [[5, 12], [7, 14]]},
         "text-allow-overlap": false,
-        "text-anchor": "bottom-left",
-        "text-offset": [0.3, 0.2],
+        "text-anchor": "left",
         "text-padding": 1,
         "text-transform": "none",
-        "text-font": ["Source Sans Pro Bold"]
+        "text-font": ["Source Sans Pro Bold"],
+        "text-justify": "left",
+        "text-offset": [0.5, -0.05]
       },
       "paint": {
         "text-color": "#000000",
@@ -6811,11 +6812,12 @@
         "text-field": "{texte}",
         "text-size": {"stops": [[3, 12], [6, 15]]},
         "text-allow-overlap": false,
-        "text-anchor": "bottom-left",
-        "text-offset": [0.25, -0.1],
+        "text-anchor": "left",
         "text-padding": 1,
         "text-transform": "none",
-        "text-font": ["Source Sans Pro Bold"]
+        "text-font": ["Source Sans Pro Bold"],
+        "text-justify": "left",
+        "text-offset": [0.5, -0.05]
       },
       "paint": {
         "text-color": "#000000",
