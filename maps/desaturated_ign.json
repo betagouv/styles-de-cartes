@@ -5,14 +5,14 @@
     "fr": {
       "name": "Désaturée",
       "description": "Une carte en niveaux de gris avec des constrastes doux, pour un fond cartographique discret.",
-      "use": "Recommandé pour des applications de datavisualisation et la superposition de données thématiques, notamment des aplats de couleurs. La discretion de la carte permet de mettre en valeur vos données sans interférences visuelles.",
-      "accessibility": "Les contrastes adoucis permettent de mettre en avant vos données et d'en améliorer. La lisibilité des éléments cartographiques essentiels est préservée, en particulier les toponymes"
+      "use": "Recommandé pour des applications de datavisualisation et la superposition de données thématiques, notamment des aplats de couleurs. La discrétion de la carte permet de mettre en valeur vos données sans interférences visuelles.",
+      "accessibility": "Les contrastes adoucis permettent une bonne visibilité de vos données superposées. La lisibilité des toponymes est préservée."
     },
     "en": {
       "name": "Desaturated",
       "description": "A grayscale map with soft contrasts, for a discreet map background.",
-      "use": "Recommended for datavisualization applications and overlaying thematic data, especially flat colors. The map's discretion allows you to highlight your data without visual interference.",
-      "accessibility": "Soft contrasts help to highlight and enhance your data. Essential map elements remain legible, especially place names."
+      "use": "Recommended for datavisualization applications and overlaying thematic data, especially flat colors. The map's unobtrusive appearance allows you to highlight your data without visual interference.",
+      "accessibility": "Soft contrasts make your superimposed data clearly visible. Toponym legibility is preserved."
     },
     "source": "IGN",
     "url": "https://betagouv.github.io/styles-de-cartes/maps/desaturated_ign.json",
