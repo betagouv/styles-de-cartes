@@ -38,6 +38,15 @@
       "type": "vector",
       "tiles": ["https://data.geopf.fr/tms/1.0.0/PLAN.IGN/{z}/{x}/{y}.pbf"],
       "maxzoom": 18.9
+    },
+    "admin_express": {
+      "type": "vector",
+      "tiles": [
+        "https://data.geopf.fr/tms/1.0.0/ADMIN_EXPRESS/{z}/{x}/{y}.pbf"
+      ],
+      "minzoom": 0,
+      "maxzoom": 24,
+      "scheme": "xyz"
     }
   },
   "sprite": "https://openmaptiles.github.io/osm-bright-gl-style/sprite",
@@ -2861,6 +2870,48 @@
           0
         ]
       }
+    },
+    {
+      "id": "Limites - Region",
+      "type": "line",
+      "source": "admin_express",
+      "source-layer": "region",
+      "layout": {"visibility": "none"}
+    },
+    {
+      "id": "Limites - Departement",
+      "type": "line",
+      "source": "admin_express",
+      "source-layer": "departement",
+      "layout": {"visibility": "none"}
+    },
+    {
+      "id": "Limites - EPCI",
+      "type": "line",
+      "source": "admin_express",
+      "source-layer": "epci",
+      "layout": {"visibility": "none"}
+    },
+    {
+      "id": "Limites - Canton",
+      "type": "line",
+      "source": "admin_express",
+      "source-layer": "canton",
+      "layout": {"visibility": "none"}
+    },
+    {
+      "id": "Limites - Arrondissement",
+      "type": "line",
+      "source": "admin_express",
+      "source-layer": "arrondissement",
+      "layout": {"visibility": "none"}
+    },
+    {
+      "id": "Limites - Commune",
+      "type": "line",
+      "source": "admin_express",
+      "source-layer": "commune",
+      "layout": {"visibility": "none"}
     },
     {
       "id": "toponyme - ocs lineaire 3",
