@@ -38,6 +38,15 @@
       "type": "vector",
       "tiles": ["https://data.geopf.fr/tms/1.0.0/PLAN.IGN/{z}/{x}/{y}.pbf"],
       "maxzoom": 18.9
+    },
+    "admin_express": {
+      "type": "vector",
+      "tiles": [
+        "https://data.geopf.fr/tms/1.0.0/ADMIN_EXPRESS/{z}/{x}/{y}.pbf"
+      ],
+      "minzoom": 0,
+      "maxzoom": 24,
+      "scheme": "xyz"
     }
   },
   "sprite": "https://openmaptiles.github.io/osm-bright-gl-style/sprite",
@@ -2863,6 +2872,48 @@
       }
     },
     {
+      "id": "Limites - Region",
+      "type": "line",
+      "source": "admin_express",
+      "source-layer": "region",
+      "layout": {"visibility": "none"}
+    },
+    {
+      "id": "Limites - Departement",
+      "type": "line",
+      "source": "admin_express",
+      "source-layer": "departement",
+      "layout": {"visibility": "none"}
+    },
+    {
+      "id": "Limites - EPCI",
+      "type": "line",
+      "source": "admin_express",
+      "source-layer": "epci",
+      "layout": {"visibility": "none"}
+    },
+    {
+      "id": "Limites - Canton",
+      "type": "line",
+      "source": "admin_express",
+      "source-layer": "canton",
+      "layout": {"visibility": "none"}
+    },
+    {
+      "id": "Limites - Arrondissement",
+      "type": "line",
+      "source": "admin_express",
+      "source-layer": "arrondissement",
+      "layout": {"visibility": "none"}
+    },
+    {
+      "id": "Limites - Commune",
+      "type": "line",
+      "source": "admin_express",
+      "source-layer": "commune",
+      "layout": {"visibility": "none"}
+    },
+    {
       "id": "toponyme - ocs lineaire 3",
       "type": "symbol",
       "source": "plan_ign",
@@ -5450,11 +5501,12 @@
         "text-field": "{texte}",
         "text-size": {"stops": [[5, 12], [7, 14]]},
         "text-allow-overlap": false,
-        "text-anchor": "bottom-left",
-        "text-offset": [0.3, 0.2],
+        "text-anchor": "left",
         "text-padding": 1,
         "text-transform": "none",
-        "text-font": ["Source Sans Pro Bold"]
+        "text-font": ["Source Sans Pro Bold"],
+        "text-justify": "left",
+        "text-offset": [0.5, -0.05]
       },
       "paint": {
         "text-color": "#FFFFFF",
@@ -5463,7 +5515,7 @@
       }
     },
     {
-      "id": "toponyme localite importance 1 avec point",
+      "id": "toponyme localite importance 1  avec point",
       "type": "symbol",
       "source": "plan_ign",
       "source-layer": "toponyme_localite_ponc",
@@ -5485,11 +5537,12 @@
         "text-field": "{texte}",
         "text-size": {"stops": [[3, 12], [6, 15]]},
         "text-allow-overlap": false,
-        "text-anchor": "bottom-left",
-        "text-offset": [0.25, -0.1],
+        "text-anchor": "left",
         "text-padding": 1,
         "text-transform": "none",
-        "text-font": ["Source Sans Pro Bold"]
+        "text-font": ["Source Sans Pro Bold"],
+        "text-justify": "left",
+        "text-offset": [0.5, -0.05]
       },
       "paint": {
         "text-color": "#FFFFFF",
