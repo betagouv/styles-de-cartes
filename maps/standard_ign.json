@@ -36,7 +36,7 @@
         "https://data.geopf.fr/tms/1.0.0/ADMIN_EXPRESS/{z}/{x}/{y}.pbf"
       ],
       "minzoom": 0,
-      "maxzoom": 24,
+      "maxzoom": 20,
       "scheme": "xyz"
     }
   },
@@ -4042,6 +4042,7 @@
       "source": "plan_ign",
       "source-layer": "limite_lin",
       "minzoom": 0,
+      "maxzoom": 24,
       "filter": ["in", "symbo", "LIM_ETAT", "LIM_ETAT_ETRANGER"],
       "layout": {
         "visibility": "visible",
@@ -4050,7 +4051,15 @@
       },
       "paint": {
         "line-color": "rgba(75, 75, 75, 1)",
-        "line-width": {"stops": [[5, 1], [14, 3.5]], "base": 0.8},
+        "line-width": [
+          "interpolate",
+          ["exponential", 0.8],
+          ["zoom"],
+          5,
+          1,
+          14,
+          3.5
+        ],
         "line-opacity": 0.3
       }
     },
@@ -4059,42 +4068,55 @@
       "type": "line",
       "source": "admin_express",
       "source-layer": "region",
-      "layout": {"visibility": "none"}
+      "minzoom": 6,
+      "maxzoom": 8,
+      "layout": {"visibility": "none"},
+      "paint": {
+        "line-color": "rgba(165, 165, 165, 1)",
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 6, 0, 6.3, 1],
+        "line-width": ["interpolate", ["linear"], ["zoom"], 6, 1, 12, 2]
+      }
     },
     {
       "id": "Limites - Departement",
       "type": "line",
       "source": "admin_express",
       "source-layer": "departement",
-      "layout": {"visibility": "none"}
+      "minzoom": 7.5,
+      "maxzoom": 10.5,
+      "layout": {"visibility": "none"},
+      "paint": {
+        "line-color": "rgba(165, 165, 165, 1)",
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 7.5, 0, 7.8, 1],
+        "line-width": ["interpolate", ["linear"], ["zoom"], 6, 1, 12, 2]
+      }
     },
     {
       "id": "Limites - EPCI",
       "type": "line",
       "source": "admin_express",
       "source-layer": "epci",
-      "layout": {"visibility": "none"}
-    },
-    {
-      "id": "Limites - Canton",
-      "type": "line",
-      "source": "admin_express",
-      "source-layer": "canton",
-      "layout": {"visibility": "none"}
-    },
-    {
-      "id": "Limites - Arrondissement",
-      "type": "line",
-      "source": "admin_express",
-      "source-layer": "arrondissement",
-      "layout": {"visibility": "none"}
+      "minzoom": 10,
+      "maxzoom": 12.5,
+      "layout": {"visibility": "none", "line-join": "miter"},
+      "paint": {
+        "line-color": "rgba(165, 165, 165, 1)",
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 10, 0, 10.3, 1],
+        "line-width": ["interpolate", ["linear"], ["zoom"], 6, 1, 12, 2]
+      }
     },
     {
       "id": "Limites - Commune",
       "type": "line",
       "source": "admin_express",
       "source-layer": "commune",
-      "layout": {"visibility": "none"}
+      "minzoom": 12,
+      "layout": {"visibility": "none", "line-join": "miter"},
+      "paint": {
+        "line-color": "rgba(165, 165, 165, 1)",
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 12, 0, 12.3, 1],
+        "line-width": 2
+      }
     },
     {
       "id": "toponyme - ocs lineaire 3",
