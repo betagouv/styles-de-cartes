@@ -4070,6 +4070,9 @@
       "source-layer": "region",
       "minzoom": 6,
       "maxzoom": 8,
+      "metadata": {
+        "group": "admin_limits"
+      },
       "layout": {"visibility": "none"},
       "paint": {
         "line-color": "rgba(165, 165, 165, 1)",
@@ -4084,6 +4087,9 @@
       "source-layer": "departement",
       "minzoom": 7.5,
       "maxzoom": 10.5,
+      "metadata": {
+        "group": "admin_limits"
+      },
       "layout": {"visibility": "none"},
       "paint": {
         "line-color": "rgba(165, 165, 165, 1)",
@@ -4098,7 +4104,10 @@
       "source-layer": "epci",
       "minzoom": 10,
       "maxzoom": 12.5,
-      "layout": {"visibility": "none", "line-join": "miter"},
+      "metadata": {
+        "group": "admin_limits"
+      },
+      "layout": {"visibility": "none"},
       "paint": {
         "line-color": "rgba(165, 165, 165, 1)",
         "line-opacity": ["interpolate", ["linear"], ["zoom"], 10, 0, 10.3, 1],
@@ -4111,7 +4120,10 @@
       "source": "admin_express",
       "source-layer": "commune",
       "minzoom": 12,
-      "layout": {"visibility": "none", "line-join": "miter"},
+      "metadata": {
+        "group": "admin_limits"
+      },
+      "layout": {"visibility": "none"},
       "paint": {
         "line-color": "rgba(165, 165, 165, 1)",
         "line-opacity": ["interpolate", ["linear"], ["zoom"], 12, 0, 12.3, 1],
