@@ -1,9 +1,3 @@
-# Styles de cartes
+# ⚠️ Ce dépôt est obsolète ⚠️
 
-Des styles de cartes prêts à l'emploi pour les données IGN et OSM.
-
-Fonds de cartes
-
-Ce dépôt contient des styles de cartes prêts à l'emploi pour les données IGN et OSM.
-
-Ces styles sont proposés par le service [Fonds de cartes](https://github.com/betagouv/fonds-de-cartes), qui propose un ensemble d'éléments clé en main pour intégrer facilement des cartes à son site internet ou son application.
+Ce dépôt a été remplacé par un nouveau dépôt. Veuillez vous rediriger vers [le nouveau site du service](https://fab-geocommuns.github.io/carte-facile-site/), ou vers le repo de [la librairie Carte facile](https://github.com/fab-geocommuns/carte-facile).

@@ -27,8 +27,7 @@
   "sources": {
     "plan_ign": {
       "type": "vector",
-      "tiles": ["https://data.geopf.fr/tms/1.0.0/PLAN.IGN/{z}/{x}/{y}.pbf"],
-      "maxzoom": 18.9
+      "url": "https://betagouv.github.io/styles-de-cartes/maps/plan_ign.json"
     },
     "admin_express": {
       "type": "vector",
@@ -789,6 +788,7 @@
         "line-width": {"stops": [[14, 3.2], [15, 5.4], [16, 7.7], [17, 16.8]]},
         "line-dasharray": [2, 2],
         "line-opacity": 0.5
+      }
       }
     },
     {
